@@ -12,6 +12,10 @@ A customizable calendar, time & month picker for React Native (including Persian
 
 > yarn add react-native-datetimepicker-pro
 
+
+
+ **Screen shots**
+  
 ![Screenshot_1652875688](https://user-images.githubusercontent.com/43260748/169036251-cc252cc0-b8c3-4b87-be33-06425f9ca939.png)
 
 
@@ -19,3 +23,42 @@ A customizable calendar, time & month picker for React Native (including Persian
 
 
 ![Screenshot_1652875701](https://user-images.githubusercontent.com/43260748/169036295-c9c0a9de-b344-4179-a4d1-279d4901d7ef.png)
+
+  
+## Examples
+
+**Basic example**
+```
+import React, { useState } from 'react';
+import DatePicker from 'react-native-datetimepicker-pro';
+
+const BasicUsage = () => {
+  const [selectedDate, setSelectedDate] = useState('');
+
+  return (
+    <DatePicker
+      onSelectedChange={date => setSelectedDate(date)}
+    />
+  );
+};
+```
+
+**Jalali Calendar**
+
+```
+import React from 'react';
+import DatePicker, { getFormatedDate } from 'react-native-datetimepicker-pro';
+
+const JalaliExample = () => {
+  return (
+    <DatePicker
+      isGregorian={false}
+      options={{
+        defaultFont: 'Shabnam-Light',
+        headerFont: 'Shabnam-Medium',
+      }}
+      selected={getFormatedDate(new Date(), 'jYYYY/jMM/jDD')}
+    />
+  );
+};
+```
