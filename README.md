@@ -62,3 +62,13 @@ const JalaliExample = () => {
   );
 };
 ```
+
+## API
+
+### Props
+
+| Prop             | Type   | Optional | Default | Description                                                                      |
+| ---------------- | ------ | -------- | ------- | -------------------------------------------------------------------------------- |
+| isGregorian      | bool   | Yes      | true    | Gregorian calendar is the default. if shamsi is required set this prop to false. |
+| selected         | string | Yes      | null    | for gregorian the format should be 'YYYY-MM-DD' and for shamsi 'jYYYY/jMM/jDD'   |
+| onSelectedChange | func   | No (Required)|         | Selected date is returned as a parameter to the function.                        |
