@@ -74,9 +74,19 @@ const JalaliExample = () => {
 | onSelectedChange | func   | No (required) |         | Selected date is returned as a parameter to the function.                        |
 options |props  | Yes       |       | Some visual effects like font and colors are asigned threw this prop. Check the options prop description table for more info.
 
-### Options Props
-| Prop             | Type   | Optional      | Default | Description                                                                      |
-| ---------------- | ------ | ------------- | ------- | -------------------------------------------------------------------------------- |
-defaultFont | string    | Yes       | 'System'  | font of dates and times.
-headerFont  | string    | Yes       |  'System' | font of the headers
 
+### Options Props
+
+| Prop               | Type   | Optional | Default                   | Description                    |
+| ------------------ | ------ | -------- | ------------------------- | ------------------------------ |
+| defaultFont        | string | Yes      | 'System'                  | font of dates and times.       |
+| headerFont         | string | Yes      | 'System'                  | font of the headers            |
+| textFontSize       | int    | Yes      | 15                        |
+| textHeaderFontSize | int    | Yes      | 17                        |
+| mainColor          | string | Yes      | #61dafb                   | any color format is supported. |
+| backgroundColor    | string | Yes      | #fff                      | any color format is supported. |
+| textHeaderColor    | string | Yes      | #212c35                   | any color format is supported. |
+| textDefaultColor   | string | Yes      | #2d4150                   | any color format is supported. |
+| selectedTextColor  | string | Yes      | #2d4150                   | any color format is supported. |
+| textSecondaryColor | string | Yes      | #7a92a5                   | any color format is supported. |
+| borderColor        | string | Yes      | #rgba(122, 146, 165, 0.1) | any color format is supported. |
