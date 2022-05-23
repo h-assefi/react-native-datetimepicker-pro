@@ -67,8 +67,16 @@ const JalaliExample = () => {
 
 ### Props
 
-| Prop             | Type   | Optional | Default | Description                                                                      |
-| ---------------- | ------ | -------- | ------- | -------------------------------------------------------------------------------- |
-| isGregorian      | bool   | Yes      | true    | Gregorian calendar is the default. if shamsi is required set this prop to false. |
-| selected         | string | Yes      | null    | for gregorian the format should be 'YYYY-MM-DD' and for shamsi 'jYYYY/jMM/jDD'   |
-| onSelectedChange | func   | No (Required)|         | Selected date is returned as a parameter to the function.                        |
+| Prop             | Type   | Optional      | Default | Description                                                                      |
+| ---------------- | ------ | ------------- | ------- | -------------------------------------------------------------------------------- |
+| isGregorian      | bool   | Yes           | true    | Gregorian calendar is the default. if shamsi is required set this prop to false. |
+| selected         | string | Yes           | null    | for gregorian the format should be 'YYYY-MM-DD' and for shamsi 'jYYYY/jMM/jDD'   |
+| onSelectedChange | func   | No (required) |         | Selected date is returned as a parameter to the function.                        |
+options |props  | Yes       |       | Some visual effects like font and colors are asigned threw this prop. Check the options prop description table for more info.
+
+### Options Props
+| Prop             | Type   | Optional      | Default | Description                                                                      |
+| ---------------- | ------ | ------------- | ------- | -------------------------------------------------------------------------------- |
+defaultFont | string    | Yes       | 'System'  | font of dates and times.
+headerFont  | string    | Yes       |  'System' | font of the headers
+
