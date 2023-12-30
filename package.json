@@ -1,6 +1,6 @@
 {
   "name": "react-native-datetimepicker-pro",
-  "version": "1.0.0",
+  "version": "1.0.4",
   "description": "A customizable calendar, time & month picker for React Native (including Persian Jalaali calendar & locale)",
   "main": "src/index.js",
   "scripts": {
